@@ -1,0 +1,23 @@
+.logo {
+    color: aquamarine;
+}
+.header_nav {
+    display: flex;
+    background: transparent;
+    z-index: 1;
+    padding: 15px;
+}
+.header_nav ul {
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.header_nav ul li{
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+.active {
+    color: blue;
+}
