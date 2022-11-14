@@ -16,6 +16,67 @@ a {
   box-sizing: border-box;
 }
 
+.dp {
+  z-index: 1;
+  position: fixed;
+  right: 10%;
+  top: 22%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.gray_layer {
+  z-index: 0;
+  width: 45%;
+  height: calc(100vh + 265px);
+  background-image: linear-gradient(to bottom right, rgb(207, 218, 232), rgb(255, 255, 255));
+  position: fixed;
+  right: 0;
+  top: -265px;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 50%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .dp {
+    right: 8%;
+  }
+
+  .gray_layer {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .dp {
+    right: 7%;
+  }
+
+  .gray_layer {
+    width: 38%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .dp {
+    right: 6%;
+  }
+
+  .gray_layer {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .dp {
+    right: 6%;
+  }
+
+  .gray_layer {
+    width: 34%;
+  }
+}
+
 
 @media (prefers-color-scheme: dark) {
   html {
