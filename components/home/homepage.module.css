@@ -1,0 +1,16 @@
+.title_block {
+    font-family: sans-serif;
+    text-align: center;
+}
+.tagline {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 0.2rem;
+    color: rgb(118, 131, 152);
+}
+.profile_name {
+    font-size: 45px;
+    line-height: 1px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
