@@ -1,8 +1,7 @@
 import React from 'react';
 import classes from './header.module.css';
-import Link from "next/link";
 
-export default function Header({selected}) {
+export default function Header({selected, changeSelected}) {
     return(
         <>
             <nav className={classes.header_nav}>
@@ -10,20 +9,20 @@ export default function Header({selected}) {
                     logo
                 </div>
                 <ul>
-                    <li className={selected == 'home' ? classes.active : ""}>
-                        <Link href="/">Home</Link>
+                    <li className={selected == 'home' ? classes.active : ""} onClick={()=> changeSelected('home')}>
+                        <span>Home</span>
                     </li>
-                    <li className={selected == 'about' ? classes.active : ""}>
-                        <Link href="/">About</Link>
+                    <li className={selected == 'about' ? classes.active : ""} onClick={()=> changeSelected('about')}>
+                        <span>About</span>
                     </li>
-                    <li className={selected == 'experience' ? classes.active : ""}>
-                        <Link href="/">Experience</Link>
+                    <li className={selected == 'experience' ? classes.active : ""} onClick={()=> changeSelected('experience')}>
+                        <span>Experience</span>
                     </li>
-                    <li className={selected == 'portfolio' ? classes.active : ""}>
-                        <Link href="/">Portfolio</Link>
+                    <li className={selected == 'portfolio' ? classes.active : ""} onClick={()=> changeSelected('portfolio')}>
+                        <span>Portfolio</span>
                     </li>
-                    <li className={selected == 'contact' ? classes.active : ""}>
-                        <Link href="/contact">Contact</Link>
+                    <li className={selected == 'contact' ? classes.active : ""} onClick={()=> changeSelected('contact')}>
+                        <span>Contact</span>
                     </li>
                 </ul>
             </nav>

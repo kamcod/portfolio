@@ -29,11 +29,23 @@ a {
   width: 45%;
   height: calc(100vh + 265px);
   background-image: linear-gradient(to bottom right, rgb(207, 218, 232), rgb(255, 255, 255));
+  /*background-image: url("../public/images/bg.jpg");*/
   position: fixed;
   right: 0;
   top: -265px;
   border-bottom-left-radius: 100%;
   border-top-left-radius: 50%;
+}
+
+.content {
+  transition: all 2s ease-out;
+  width: 50%;
+  margin-top: calc(100% - 90%);
+  margin-left: calc(100vw - 94%);
+  /*background: rgb(237, 241, 245);*/
+  background-image: linear-gradient(30deg, rgb(237, 241, 245), rgb(255, 255, 255));
+  border-radius: 20px;
+  padding: 30px;
 }
 
 @media only screen and (max-width: 1440px) {

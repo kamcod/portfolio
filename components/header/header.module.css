@@ -17,7 +17,15 @@
 .header_nav ul li{
     padding: 0 20px;
     text-transform: uppercase;
+    letter-spacing: -0.5px;
+    cursor: pointer;
 }
 .active {
-    color: blue;
+    color: green;
+    font-weight: 500;
+}
+.active span {
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+    transition: all 0.1s ease-out;
 }
