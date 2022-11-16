@@ -1,15 +1,11 @@
 import React, {useEffect, useState} from "react";
 import Image from "next/image";
-import AppConfig from "../../config/AppConfig";
 
 export default function Home() {
     const [dpWidth, setDpWidth] = useState(100);
     const [dpHeight, setDpHeight] = useState(100);
     const [profileImgSrc, setProfileImgSrc] = useState('');
 
-    const imgLoader = ({ src, width, quality }) => {
-        return `${document.domain === 'localhost' ? AppConfig.appUrl : 'https://portfolio-kamcod.vercel.app'}/${src}?w=${width}&q=${quality || 75}`
-    };
 
     useEffect(()=> {
         const vWidth = window.innerWidth;
@@ -27,7 +23,7 @@ export default function Home() {
         <>
                 <div className="gray_layer">
                 </div>
-                <Image className="dp" src={profileImgSrc} width={dpWidth} loader={imgLoader} height={dpHeight} alt="profile photo"/>
+                <Image className="dp" src={profileImgSrc} width={dpWidth} height={dpHeight} alt="profile photo"/>
         </>
     )
 }
