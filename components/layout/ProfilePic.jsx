@@ -8,7 +8,7 @@ export default function Home() {
     const [profileImgSrc, setProfileImgSrc] = useState('');
 
     const imgLoader = ({ src, width, quality }) => {
-        return `${AppConfig.appUrl}/${src}?w=${width}&q=${quality || 75}`
+        return `${document.domain === 'localhost' ? AppConfig.appUrl : 'https://portfolio-kamcod.vercel.app'}/${src}?w=${width}&q=${quality || 75}`
     };
 
     useEffect(()=> {
