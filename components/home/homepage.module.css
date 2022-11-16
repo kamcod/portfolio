@@ -1,3 +1,10 @@
+.firstHi {
+    color: rgb(118, 131, 152);
+}
+.hello {
+    color: #739900;
+    font-weight: 500;
+}
 .title_block {
     font-family: sans-serif;
     text-align: center;
@@ -13,4 +20,32 @@
     line-height: 1px;
     font-weight: 600;
     text-transform: capitalize;
+}
+.contactBtn {
+    width: 20%;
+    margin: 0 auto;
+    height: 35px;
+    border: 1px solid #66ffb3;
+    border-radius: 10px;
+    font-size: 15px;
+    letter-spacing: 0.03rem;
+    color: white;
+    background: #00b359;
+    cursor: pointer;
+}
+.contactBtn:hover {
+    border: 1px solid #008040;
+    background: #00e673;
+}
+.actions {
+    width: 100%;
+    display: flex;
+}
+.details {
+    margin-top: 25px;
+}
+.home_links {
+    cursor: pointer;
+    color: rgb(118, 131, 152);
+    text-decoration: underline;
 }

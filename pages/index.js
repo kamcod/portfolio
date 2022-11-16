@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import Header from "../components/header/Header.jsx";
 import ProfilePic from '../components/layout/ProfilePic';
+import Content from "../components/layout/Content";
 import HomePage from "../components/home/HomePage";
 import About from "../components/about/About";
 import Experience from "../components/experience/Experience";
@@ -19,14 +20,13 @@ export default function Home() {
     <>
         <Header selected={selected} changeSelected={changeSelected}/>
         <ProfilePic />
-        <div className="content">
-                {selected === 'home' && <HomePage />}
-                {selected === 'about' && <About />}
-                {selected === 'experience' && <Experience />}
-                {selected === 'portfolio' && <Portfolio />}
-                {selected === 'contact' && <Contact />}
-
-        </div>
+        <Content>
+            {selected === 'home' && <HomePage gotoContact={changeSelected}/>}
+            {selected === 'about' && <About />}
+            {selected === 'experience' && <Experience />}
+            {selected === 'portfolio' && <Portfolio />}
+            {selected === 'contact' && <Contact />}
+        </Content>
     </>
   )
 }

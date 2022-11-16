@@ -6,7 +6,7 @@ export default function Header({selected, changeSelected}) {
         <>
             <nav className={classes.header_nav}>
                 <div className={classes.logo}>
-                    logo
+                    |MKamran
                 </div>
                 <ul>
                     <li className={selected == 'home' ? classes.active : ""} onClick={()=> changeSelected('home')}>

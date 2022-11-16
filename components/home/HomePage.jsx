@@ -1,17 +1,11 @@
 import React, {useState, useEffect} from "react";
 import classes from './homepage.module.css';
 
-export default function HomePage() {
-
-    const [inProp, setInProp] = useState(false);
-
-    useEffect(()=>{
-        setInProp(true);
-    }, []);
+export default function HomePage({ gotoContact }) {
     return (
         <>
-            <span>
-                Hello, my name is
+            <span className={classes.firstHi}>
+                <span className={classes.hello}> Hello,</span> my name is
             </span>
             <div className={classes.title_block}>
                 <p className={classes.profile_name}>
@@ -21,11 +15,12 @@ export default function HomePage() {
                     Web Developer
                 </p>
             </div>
-            <br />
-            web developer <br />
-            contact <br />
-            9348504839084
-
+            <div className={classes.actions}>
+                <button className={classes.contactBtn} onClick={()=>gotoContact('contact')}>Contact</button>
+            </div>
+            <div className={classes.details}>
+                Here you can have detail about my <a className={classes.home_links} onClick={()=>gotoContact('about')}>background and expertise</a>, <a className={classes.home_links} onClick={()=>gotoContact('experience')}>experiences</a> in different field for different clients and organisations. You can have a look on my <a className={classes.home_links} onClick={()=>gotoContact('portfolio')}>recent work</a> as well.
+            </div>
         </>
     )
 }
