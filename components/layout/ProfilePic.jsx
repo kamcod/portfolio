@@ -2,9 +2,9 @@ import React, {useEffect, useState} from "react";
 import Image from "next/image";
 
 export default function Home() {
-    const [dpWidth, setDpWidth] = useState(100);
-    const [dpHeight, setDpHeight] = useState(100);
-    const [profileImgSrc, setProfileImgSrc] = useState('');
+    const [dpWidth, setDpWidth] = useState(500);
+    const [dpHeight, setDpHeight] = useState(500);
+    const [profileImgSrc, setProfileImgSrc] = useState('/images/bg.jpg');
 
 
     useEffect(()=> {
