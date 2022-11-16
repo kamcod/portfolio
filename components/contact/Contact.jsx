@@ -5,8 +5,8 @@ export default function Contact() {
         <>
             Contact Page <br />
 
-            contact <br />
-            9348504839084
+            contact: +923316707007
+            email: mkamranee@gmail.com
         </>
     )
 }
