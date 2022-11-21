@@ -48,7 +48,6 @@ a {
 }
 
 .content {
-  transition: all 2s ease-out;
   width: 45%;
   margin-top: calc(100% - 90%);
   margin-left: calc(100vw - 94%);
