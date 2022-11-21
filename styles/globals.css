@@ -55,15 +55,17 @@ a {
   /*background-image: linear-gradient(30deg, rgb(237, 241, 245), rgb(255, 255, 255));*/
   background-image: radial-gradient(rgb(237, 241, 245), rgb(255, 255, 255));
   border-radius: 20px;
-  padding: 30px;
+  padding: 2em;
 }
 @media only screen and (max-width: 1440px) {
   .dp {
     right: 8%;
   }
-
   .gray_layer {
     width: 40%;
+  }
+  .content {
+    width: 48%;
   }
 }
 
@@ -71,9 +73,11 @@ a {
   .dp {
     right: 7%;
   }
-
   .gray_layer {
     width: 38%;
+  }
+  .content {
+    width: 50%;
   }
 }
 
@@ -81,19 +85,36 @@ a {
   .dp {
     right: 6%;
   }
-
   .gray_layer {
     width: 35%;
   }
 }
-
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 60%;
+    padding: 1.6em;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .content {
+    width: 68%;
+  }
+}
 @media only screen and (max-width: 425px) {
   .dp {
     right: 6%;
   }
-
   .gray_layer {
     width: 34%;
+  }
+  .content {
+    width: 70%;
+    padding: 1em;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .content {
+    width: 78%;
   }
 }
 
