@@ -87,16 +87,10 @@ a {
   .gray_layer {
     width: 35%;
   }
-}
-@media only screen and (max-width: 600px) {
   .content {
-    width: 60%;
+    margin-left: calc(100vw - 95%);
+    width: 52%;
     padding: 1.6em;
-  }
-}
-@media only screen and (max-width: 500px) {
-  .content {
-    width: 68%;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -107,13 +101,9 @@ a {
     width: 34%;
   }
   .content {
-    width: 68%;
+    margin-left: calc(100vw - 96%);
+    width: 55%;
     padding: 1em;
-  }
-}
-@media only screen and (max-width: 320px) {
-  .content {
-    width: 78%;
   }
 }
 
