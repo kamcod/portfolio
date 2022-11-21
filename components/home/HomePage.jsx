@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import classes from './homepage.module.css';
 
 export default function HomePage({ gotoContact }) {
@@ -9,7 +9,7 @@ export default function HomePage({ gotoContact }) {
             </span>
             <div className={classes.title_block}>
                 <p className={classes.profile_name}>
-                    Mudummyt Knamen
+                    Muhammad Kamran
                 </p>
                 <p className={classes.tagline}>
                     Web Developer
@@ -19,7 +19,7 @@ export default function HomePage({ gotoContact }) {
                 <button className={classes.contactBtn} onClick={()=>gotoContact('contact')}>Contact</button>
             </div>
             <div className={classes.details}>
-                Here you can have detail about my <a className={classes.home_links} onClick={()=>gotoContact('about')}>background and expertise</a>, <a className={classes.home_links} onClick={()=>gotoContact('experience')}>experiences</a> in different field for different clients and organisations. You can have a look on my <a className={classes.home_links} onClick={()=>gotoContact('portfolio')}>recent work</a> as well.
+                Here you can have detail about my <a className="links" onClick={()=>gotoContact('about')}>background and expertise</a>, <a className="links" onClick={()=>gotoContact('experience')}>experiences</a> in different field for different clients and organisations. You can have a look on my <a className="links" onClick={()=>gotoContact('portfolio')}>recent work</a> as well.
             </div>
         </>
     )

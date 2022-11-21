@@ -12,10 +12,10 @@ export default function Home() {
         let value = vWidth * 0.32;
         setDpWidth(value);
         setDpHeight(value);
-        if(document.domain !== 'localhost'){
-            setProfileImgSrc('/images/bg.jpg');
+        if(document.domain === 'localhost'){
+            setProfileImgSrc('/images/profile.jpg');
         } else {
-            setProfileImgSrc('https://portfolio-kamcod.vercel.app/images/bg.jpg');
+            setProfileImgSrc('https://portfolio-kamcod.vercel.app/images/profile.jpg');
         }
 
     }, []);

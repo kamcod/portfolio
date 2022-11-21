@@ -21,8 +21,9 @@ export default function Home() {
         <Header selected={selected} changeSelected={changeSelected}/>
         <ProfilePic />
         <Content>
+            <h2 className="page_title">{selected !== 'home' && selected}</h2>
             {selected === 'home' && <HomePage gotoContact={changeSelected}/>}
-            {selected === 'about' && <About />}
+            {selected === 'about' && <About  gotoContact={changeSelected}/>}
             {selected === 'experience' && <Experience />}
             {selected === 'portfolio' && <Portfolio />}
             {selected === 'contact' && <Contact />}
