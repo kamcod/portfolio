@@ -19,7 +19,7 @@ export default function About({ gotoContact }) {
             </p>
             <p className={classes.para}>
                 I always believe in strong customer-client relationship.
-                It's guaranteed that you will be satisfied by quality of my work and will come again. Thanks!
+                It is guaranteed that you will be satisfied by quality of my work and will come again. Thanks!
             </p>
         </>
     )
