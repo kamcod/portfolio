@@ -6,7 +6,7 @@
 .toggler {
     display: none;
     padding: 10px;
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(207, 218, 232), rgb(0, 0, 0));
+    background-image: linear-gradient(to bottom right, rgb(255, 255, 255), rgb(207, 218, 232), rgb(207, 218, 232));
 }
 .header_nav {
     display: flex;
@@ -48,14 +48,14 @@
         position: absolute;
         right: 0;
         transition: all 0.5s ease-out;
-        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(207, 218, 232), rgb(207, 218, 232));
+        background-image: linear-gradient(to bottom right, #7c7c83, rgb(207, 218, 232), rgb(207, 218, 232));
         border-radius: 4px;
         z-index: 10;
         padding: 15px;
     }
     .header_nav ul {
         margin: 0;
-        padding: 20px 0 10px 0;
+        padding: 40px 10px 10px 10px;
         width: 100%;
         list-style-type: none;
         display: block;
@@ -66,11 +66,11 @@
         font-weight: 500;
         padding: 5px 20px;
         line-height: 1.5em;
+        letter-spacing: 0.05em;
     }
     .active {
         color: #00b359;
         font-weight: 600;
-        letter-spacing: 0.05em !important;
     }
     .active span {
         border-bottom: none;

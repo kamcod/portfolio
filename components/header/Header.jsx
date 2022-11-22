@@ -15,6 +15,12 @@ export default function Header({selected, changeSelected}) {
         setNavStyle(style);
     };
 
+    const changeContentTo = (path) => {
+        changeSelected(path);
+        setTimeout(()=>{
+            setNavStyle({display: 'flex', transform: 'translateX(+100%)', transition: 'all 0.5s ease-out'});
+        }, 100);
+    };
 
     return(
         <>
@@ -26,19 +32,19 @@ export default function Header({selected, changeSelected}) {
                     |MKamran
                 </div>
                 <ul>
-                    <li className={selected === 'home' ? classes.active : ""} onClick={()=> changeSelected('home')}>
+                    <li className={selected === 'home' ? classes.active : ""} onClick={()=> changeContentTo('home')}>
                         <span>Home</span>
                     </li>
-                    <li className={selected === 'about' ? classes.active : ""} onClick={()=> changeSelected('about')}>
+                    <li className={selected === 'about' ? classes.active : ""} onClick={()=> changeContentTo('about')}>
                         <span>About</span>
                     </li>
-                    <li className={selected === 'experience' ? classes.active : ""} onClick={()=> changeSelected('experience')}>
+                    <li className={selected === 'experience' ? classes.active : ""} onClick={()=> changeContentTo('experience')}>
                         <span>Experience</span>
                     </li>
-                    <li className={selected === 'portfolio' ? classes.active : ""} onClick={()=> changeSelected('portfolio')}>
+                    <li className={selected === 'portfolio' ? classes.active : ""} onClick={()=> changeContentTo('portfolio')}>
                         <span>Portfolio</span>
                     </li>
-                    <li className={selected === 'contact' ? classes.active : ""} onClick={()=> changeSelected('contact')}>
+                    <li className={selected === 'contact' ? classes.active : ""} onClick={()=> changeContentTo('contact')}>
                         <span>Contact</span>
                     </li>
                 </ul>
