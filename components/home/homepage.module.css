@@ -63,13 +63,14 @@
         font-size: 0.9em;
     }
     .contactBtn {
+        font-size: 0.9em;
         width: 40%;
         height: 30px;
     }
 }
 @media only screen and (max-width: 425px) {
-    .details, .actions {
-        font-size: 0.8em;
+    .firstHi, .details, .actions {
+        font-size: 0.7em;
     }
     .profile_name {
         font-size: 0.9em;
@@ -78,6 +79,7 @@
         font-size: 0.8em;
     }
     .contactBtn {
+        font-size: 0.8em;
         width: 45%;
         height: 25px;
     }

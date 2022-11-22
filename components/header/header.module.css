@@ -3,10 +3,15 @@
     font-family: monospace;
     font-size: 35px;
 }
+.toggler {
+    display: none;
+    padding: 10px;
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(207, 218, 232), rgb(0, 0, 0));
+}
 .header_nav {
     display: flex;
     background: transparent;
-    z-index: 1;
+    z-index: 99999;
     padding: 15px;
 }
 .header_nav ul {
@@ -24,10 +29,52 @@
 }
 .active {
     color: green;
-    font-weight: 500;
+    font-weight: 600;
 }
 .active span {
     border-bottom: 2px solid green;
     padding-bottom: 10px;
     transition: all 0.1s ease-out;
+}
+
+/*For Mobile View, turn on toggler*/
+@media only screen and (max-width: 640px) {
+    .toggler {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .header_nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        transition: all 0.5s ease-out;
+        background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(207, 218, 232), rgb(207, 218, 232));
+        border-radius: 4px;
+        z-index: 10;
+        padding: 15px;
+    }
+    .header_nav ul {
+        margin: 0;
+        padding: 20px 0 10px 0;
+        width: 100%;
+        list-style-type: none;
+        display: block;
+        justify-content: flex-end;
+    }
+    .header_nav ul li{
+        font-size: 0.9em;
+        font-weight: 500;
+        padding: 5px 20px;
+        line-height: 1.5em;
+    }
+    .active {
+        color: #00b359;
+        font-weight: 600;
+        letter-spacing: 0.05em !important;
+    }
+    .active span {
+        border-bottom: none;
+        padding: 0;
+        transition: all 0.1s ease-out;
+    }
 }
