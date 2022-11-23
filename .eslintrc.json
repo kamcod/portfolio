@@ -1,3 +1,23 @@
-{
-  "extends": "next/core-web-vitals"
+//{
+//  "extends": "next/core-web-vitals"
+//}
+ {
+  "env": {
+    "browser": true,
+    "es2021" : true
+  },
+   "extends": "next/core-web-vitals",
+
+  "rules": {
+    "react/no-unstable-nested-components": "off",
+    "no-use-before-define"               : "off",
+    "no-console"                         : "off",
+    "react/react-in-jsx-scope"           : "off",
+    "react/no-unescaped-entities"        : "off"
+//    "react/jsx-filename-extension"       : [1, { extensions: ['.js', '.jsx'] }],
+//    "linebreak-style"                    : 0,
+//    "max-len"                            : ['warn', { code: 160 }],
+//    "no-multi-spaces"                    : ['warn', { exceptions: { AssignmentExpression: true, VariableDeclarator: true } }],
+//    "key-spacing"                        : ['error', { align: 'colon' }],
+  }
 }
