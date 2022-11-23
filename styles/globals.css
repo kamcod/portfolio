@@ -56,6 +56,9 @@ a {
   border-radius: 20px;
   padding: 2em;
 }
+.indent {
+  text-indent: 30px;
+}
 @media only screen and (max-width: 1440px) {
   .dp {
     right: 8%;

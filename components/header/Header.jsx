@@ -17,9 +17,11 @@ export default function Header({selected, changeSelected}) {
 
     const changeContentTo = (path) => {
         changeSelected(path);
-        setTimeout(()=>{
-            setNavStyle({display: 'flex', transform: 'translateY(-130%)', transition: 'all 0.5s ease-out'});
-        }, 100);
+        if(window.innerWidth <= 640){
+            setTimeout(()=>{
+                setNavStyle({display: 'flex', transform: 'translateY(-130%)', transition: 'all 0.5s ease-out'});
+            }, 100);
+        }
     };
 
     return(

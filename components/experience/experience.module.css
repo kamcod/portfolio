@@ -1,0 +1,18 @@
+.experiences > li {
+    padding: 20px 0;
+}
+.designation {
+    display: flex;
+    justify-content: space-between;
+}
+.designation span {
+    font-size: 1.1em;
+    font-weight: 600;
+}
+.job_roles {
+    margin-top: 10px;
+    list-style-type: circle;
+}
+.job_roles li {
+    padding-left: 5px;
+}
