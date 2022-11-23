@@ -7,10 +7,10 @@ export default function Header({selected, changeSelected}) {
 
     const toggleMenu = () => {
         let style;
-        if(navStyle.transform === 'translateX(0%)'){
-            style = {display: 'flex', transform: 'translateX(+100%)', transition: 'all 0.5s ease-out'}
+        if(navStyle.transform === 'translateY(0%)'){
+            style = {display: 'flex', transform: 'translateY(-130%)', transition: 'all 0.5s ease-out'}
         } else {
-            style = {display: 'flex', transform: 'translateX(0%)', transition: 'all 0.5s ease-out'}
+            style = {display: 'flex', transform: 'translateY(0%)', transition: 'all 0.5s ease-out'}
         }
         setNavStyle(style);
     };
@@ -18,7 +18,7 @@ export default function Header({selected, changeSelected}) {
     const changeContentTo = (path) => {
         changeSelected(path);
         setTimeout(()=>{
-            setNavStyle({display: 'flex', transform: 'translateX(+100%)', transition: 'all 0.5s ease-out'});
+            setNavStyle({display: 'flex', transform: 'translateY(-130%)', transition: 'all 0.5s ease-out'});
         }, 100);
     };
 
