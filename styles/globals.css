@@ -58,6 +58,7 @@ a {
 }
 .indent {
   text-indent: 30px;
+  text-align: justify;
 }
 @media only screen and (max-width: 1440px) {
   .dp {

@@ -19,7 +19,7 @@ export default function HomePage({ gotoContact }) {
                 <button className={classes.contactBtn} onClick={()=>gotoContact('contact')}>Contact</button>
             </div>
             <div className={classes.details}>
-                Here you can have detail about my <a className="links" onClick={()=>gotoContact('about')}>background and expertise</a>, <a className="links" onClick={()=>gotoContact('experience')}>experiences</a> in different field for different clients and organisations. You can have a look on my <a className="links" onClick={()=>gotoContact('portfolio')}>recent work</a> as well.
+                Here you can have detail about my <a className="links" onClick={()=>gotoContact('about')}>background and expertise</a>, <a className="links" onClick={()=>gotoContact('experience')}>experiences</a> in different fields for different clients and organisations. You can have a look on my <a className="links" onClick={()=>gotoContact('portfolio')}>recent work</a> as well.
             </div>
         </>
     )
